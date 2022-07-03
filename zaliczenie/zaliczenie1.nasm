@@ -1,5 +1,3 @@
-%include "io64.inc"
-
 section .data
     tab1	dq	8, 4, 3, 10, 9, 1, 6, 11, 2, 7 
     lpCnt dq 10
@@ -9,7 +7,6 @@ section .bss
 section .text
 global CMAIN
 CMAIN:
-    mov rbp, rsp; for correct debugging
     mov rsi, 0
     mov qword[sum],0
     mov rcx, qword [lpCnt]
