@@ -7,6 +7,7 @@ section .bss
 section .text
 global CMAIN
 CMAIN:
+
     mov rsi, 0
     mov qword[sum],0
     mov rcx, qword [lpCnt]

@@ -15,6 +15,7 @@ section .bss
 section .text
 global CMAIN
 CMAIN:
+    mov rbp, rsp; for correct debugging
     call _printtext1
     call _getname
     call _createFile
